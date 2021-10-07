@@ -454,19 +454,6 @@ F 3 "~" H 5600 4800 50  0001 C CNN
 $EndComp
 Text GLabel 6150 2550 0    50   Input ~ 0
 CS
-$Comp
-L Transistor_FET:IRF7403 Q?
-U 1 1 61770BEE
-P 4100 4900
-AR Path="/61770BEE" Ref="Q?"  Part="1" 
-AR Path="/6175823F/61770BEE" Ref="Q3"  Part="1" 
-F 0 "Q3" V 4349 4900 50  0000 C CNN
-F 1 "IRF7403" V 4440 4900 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4300 4800 50  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irf7403pbf.pdf?fileId=5546d462533600a4015355fa23541b9c" H 4100 4900 50  0001 L CNN
-	1    4100 4900
-	0    1    1    0   
-$EndComp
 Connection ~ 4900 5000
 $Comp
 L Transistor_FET:IRF7403 Q?
@@ -518,7 +505,7 @@ F 1 "IRF7403" V 4150 4800 50  0001 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4300 4350 50  0001 L CNN
 F 3 "https://www.infineon.com/dgdl/irf7403pbf.pdf?fileId=5546d462533600a4015355fa23541b9c" H 4100 4450 50  0001 L CNN
 	1    4100 4450
-	0    -1   1    0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	4500 4100 4500 4550
@@ -1003,19 +990,6 @@ F 3 "~" H 5450 3150 50  0001 C CNN
 	1    5450 3150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Transistor_FET:BSS138 Q?
-U 1 1 61770AE5
-P 4300 3600
-AR Path="/61770AE5" Ref="Q?"  Part="1" 
-AR Path="/6175823F/61770AE5" Ref="Q4"  Part="1" 
-F 0 "Q4" H 4504 3646 50  0000 L CNN
-F 1 "BSS138" H 4504 3555 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4500 3525 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4300 3600 50  0001 L CNN
-	1    4300 3600
-	1    0    0    1   
-$EndComp
 Connection ~ 6150 3250
 $Comp
 L Connector_Generic:Conn_02x10_Counter_Clockwise J?
@@ -1083,4 +1057,30 @@ Text HLabel 8600 2850 2    50   Input ~ 0
 -C3__+C4
 Text HLabel 8600 2950 2    50   Input ~ 0
 -C4
+$Comp
+L Transistor_FET:IRF7403 Q?
+U 1 1 61770BEE
+P 4100 4900
+AR Path="/61770BEE" Ref="Q?"  Part="1" 
+AR Path="/6175823F/61770BEE" Ref="Q3"  Part="1" 
+F 0 "Q3" V 4349 4900 50  0000 C CNN
+F 1 "IRF7403" V 4440 4900 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4300 4800 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irf7403pbf.pdf?fileId=5546d462533600a4015355fa23541b9c" H 4100 4900 50  0001 L CNN
+	1    4100 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 61770AE5
+P 4300 3600
+AR Path="/61770AE5" Ref="Q?"  Part="1" 
+AR Path="/6175823F/61770AE5" Ref="Q4"  Part="1" 
+F 0 "Q4" H 4504 3646 50  0000 L CNN
+F 1 "BSS138" H 4504 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4500 3525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4300 3600 50  0001 L CNN
+	1    4300 3600
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
